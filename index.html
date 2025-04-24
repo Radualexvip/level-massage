@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LeVeL V.I.P. bietet Premium-Massagen in Hausach und Umgebung. Entspannungsmassage, Therapeutische Massage und V.I.P. Massage.">
+  <meta name="keywords" content="Massage, Premium, Hausach, Entspannung, Therapie, V.I.P.">
+  <meta name="theme-color" content="#6B46C1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>LeVeL V.I.P. - Premium Massage</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-purple-100 font-sans">
+  <!-- Header -->
+  <header class="bg-purple-800 text-white py-4 sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <div class="text-2xl font-bold">LeVeL V.I.P.</div>
+      <button id="menu-toggle" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+      <nav id="nav-menu" class="hidden md:flex md:items-center">
+        <ul class="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0 p-4 md:p-0">
+          <li><a href="#home" class="hover:text-purple-300 transition">Startseite</a></li>
+          <li><a href="#services" class="hover:text-purple-300 transition">Dienstleistungen</a></li>
+          <li><a href="#about" class="hover:text-purple-300 transition">Über uns</a></li>
+          <li><a href="#contact" class="hover:text-purple-300 transition">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with Slider -->
+  <section id="home" class="relative h-[60vh] md:h-screen">
+    <div class="slider">
+      <div class="slide"><img src="images/massage1.jpg" alt="Entspannungsmassage" class="w-full h-full object-cover" loading="lazy"></div>
+      <div class="slide"><img src="images/massage2.jpg" alt="Therapeutische Massage" class="w-full h-full object-cover" loading="lazy"></div>
+      <div class="slide"><img src="images/massage3.jpg" alt="Premium Massage" class="w-full h-full object-cover" loading="lazy"></div>
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center bg-purple-900 bg-opacity-50">
+      <div class="text-center text-white px-4">
+        <h1 class="text-3xl md:text-5xl font-bold mb-4">Willkommen bei LeVeL V.I.P.</h1>
+        <p class="text-lg md:text-xl mb-6">Erleben Sie Entspannung auf höchstem Niveau</p>
+        <a href="#services" class="bg-purple-400 text-white px-6 py-3 rounded-full hover:bg-purple-500 transition text-lg">Unsere Dienstleistungen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-purple-800">Unsere Dienstleistungen</h2>
+      <div class="grid grid-cols-1 gap-6">
+        <div class="p-6 bg-purple-50 rounded-lg shadow-lg text-center">
+          <h3 class="text-xl md:text-2xl font-semibold mb-4 text-purple-700">Entspannungsmassage</h3>
+          <p class="mb-4">Lösen Sie Stress mit einer sanften und entspannenden Massage.</p>
+          <p class="text-lg font-bold text-purple-800">Preis: 35 € / 60 Min</p>
+        </div>
+        <div class="p-6 bg-purple-50 rounded-lg shadow-lg text-center">
+          <h3 class="text-xl md:text-2xl font-semibold mb-4 text-purple-700">Therapeutische Massage</h3>
+          <p class="mb-4">Lindert Muskelverspannungen und Schmerzen.</p>
+          <p class="text-lg font-bold text-purple-800">Preis: 45 € / 60 Min</p>
+        </div>
+        <div class="p-6 bg-purple-50 rounded-lg shadow-lg text-center">
+          <h3 class="text-xl md:text-2xl font-semibold mb-4 text-purple-700">V.I.P. Massage</h3>
+          <p class="mb-4">Premium-Erlebnis mit ätherischen Ölen und fortschrittlichen Techniken.</p>
+          <p class="text-lg font-bold text-purple-800">Preis: 55 € / 60 Min</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-12 bg-purple-200">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-purple-800">Über uns</h2>
+      <p class="text-lg text-center max-w-3xl mx-auto">Bei LeVeL V.I.P. widmen wir uns einem unvergesslichen Massageerlebnis. Unser Team aus professionellen Therapeuten nutzt fortschrittliche Techniken, um Ihnen Entspannung und Wohlbefinden zu bieten. Entdecken Sie wahren Luxus!</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-purple-800">Kontaktieren Sie uns</h2>
+      <div class="grid grid-cols-1 gap-6">
+        <div>
+          <p class="text-lg mb-4"><strong>Adresse:</strong> Hausach und Umgebung</p>
+          <p class="text-lg mb-4"><strong>Telefon:</strong> <a href="tel:015259878258" class="hover:text-purple-500">015259878258</a></p>
+          <p class="text-lg mb-4"><strong>Email:</strong> <a href="mailto:Eugenudrea39@gmail.com" class="hover:text-purple-500">Eugenudrea39@gmail.com</a></p>
+        </div>
+        <div>
+          <div class="flex flex-col space-y-4">
+            <input type="text" placeholder="Name" class="p-3 border rounded-lg" aria-label="Name">
+            <input type="email" placeholder="Email" class="p-3 border rounded-lg" aria-label="Email">
+            <textarea placeholder="Nachricht" class="p-3 border rounded-lg h-32" aria-label="Nachricht"></textarea>
+            <button class="bg-purple-400 text-white px-6 py-3 rounded-full hover:bg-purple-500 transition text-lg">Nachricht senden</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-purple-800 text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>© 2025 LeVeL V.I.P. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
